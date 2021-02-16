@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="init new architecture" />
+    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="init new architecture">
+      <change afterPath="$PROJECT_DIR$/Application/documents/chat_room_document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/documents/message_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/documents/session_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/documents/session_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/documents/user_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/helpers/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/helpers/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/schemas/session_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/schemas/session_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/schemas/user_schema.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +55,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +78,10 @@
       <workItem from="1612202182566" duration="7780000" />
       <workItem from="1612379182536" duration="4031000" />
       <workItem from="1612708615905" duration="19000" />
-      <workItem from="1613458032475" duration="76000" />
+      <workItem from="1613458032475" duration="331000" />
+      <workItem from="1613488708608" duration="129000" />
+      <workItem from="1613488843524" duration="2792000" />
+      <workItem from="1613494600960" duration="5668000" />
     </task>
     <task id="LOCAL-00001" summary="init app">
       <created>1612209397931</created>

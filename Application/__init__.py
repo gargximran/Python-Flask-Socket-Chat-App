@@ -3,11 +3,17 @@ from flask import Flask
 from flask_cors import CORS
 from flask_mongoengine import MongoEngine
 
+# import sockets things
+from flask_socketio import SocketIO
+
 # import Helpers
 from Application.helpers import env
 
 # import error handler
 from .errors import handle_404_errors, handle_500_errors
+
+# sockets declare
+socket = SocketIO()
 
 
 # app fire
@@ -30,6 +36,9 @@ def create_app(debug=False):
     # register blueprint
     from .api import api as api_blueprint
     app.register_blueprint(api_blueprint)
+
+    # init sockets with app
+    socket.init_app(app, cors_allowed_origins="*")
 
     return app
 

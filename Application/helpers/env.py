@@ -1,8 +1,8 @@
 envs = {
     "ENVIRONMENT": "development",
-    "SECRET_KEY": "lskdgjgi8elik-52#",
+    "SECRET_KEY": "secret-key",
     "MONGODB_SETTINGS": {
-        'db': 'init'
+        'db': 'socket_chat_app'
     }
 }
 
