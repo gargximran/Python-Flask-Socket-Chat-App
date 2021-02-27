@@ -1,7 +1,7 @@
 from . import register, get_routes
 
 # import api controller files
-from ..api.hello_world import hello_world
+from ..api.chat_room import create_chat_room
 
 
 to = 'api'
@@ -11,7 +11,7 @@ def register_api_endpoints():
     Define all api routes here
     :return:
     """
-    register(endpoint='/hello_world', view_func=hello_world, to=to, prefix='api')
+    register(endpoint='/create_room', view_func=create_chat_room, to=to, prefix='api', methods=['POST'])
 
 
 def fire_routes(blueprint):

@@ -4,9 +4,10 @@ from flask import request
 
 # import documents
 from ..documents.session_document import SessionDocument
+from ..documents.chat_room_document import ChatRoomDocument
 
 # import schema
-from ..schemas.session_schema import Session as SessionSchema
+from ..schemas.session_schema import SessionSchema
 
 #  import utils
 import hashlib
@@ -19,8 +20,8 @@ def set_current_session(name=None):
     :return:
     """
     token = hashlib.sha256(
-        request.user_agent.__str__().encode('utf-8') + datetime.datetime.utcnow().__str__().encode("utf-8") + name.encode('utf-8')
-    )
+        request.user_agent.__str__().encode('utf-8') + datetime.datetime.utcnow().__str__().encode('utf-8') + name.encode('utf-8')
+    ).hexdigest()
 
     session = SessionDocument(
         user_agent=request.user_agent.__str__(),
@@ -43,8 +44,11 @@ def get_current_session(formatted=True):
     ).first()
 
     if session:
+        # update room expiration
+        update_current_room_expiration(session)
+        
         if formatted:
-            return SessionSchema.dump(session.reload).data
+            return SessionSchema(many=False).dump(session.reload).data
         return session
 
     return None
@@ -60,3 +64,18 @@ def delete_session(token):
         token=token
     )
     sessions and sessions.delete()
+
+
+def update_current_room_expiration(session):
+    """
+    Update current room expiration in every request
+    :param session: SessionDocument
+    :return:
+    """
+
+    chat_room = ChatRoomDocument.objects(
+        members__contains=session
+    ).first()
+    chat_room.update(
+        expiration=datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
+    )

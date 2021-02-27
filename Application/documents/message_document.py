@@ -14,6 +14,7 @@ class MessageDocument(Document):
     document = fields.FileField(collection_name='message_documents', required=False)
     session = fields.ReferenceField(document_type=SessionDocument, required=True)
     room = fields.ReferenceField(document_type=ChatRoomDocument, required=True)
+    seen_by = fields.ListField(fields.ReferenceField(document_type=SessionDocument), required=False)
     created_at = fields.DateTimeField(required=False)
 
     meta = {

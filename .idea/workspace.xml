@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="init new architecture">
-      <change afterPath="$PROJECT_DIR$/Application/documents/chat_room_document.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/documents/message_document.py" afterDir="false" />
+    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="create_document and session">
+      <change afterPath="$PROJECT_DIR$/Application/schemas/message_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/schemas/room_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/validators/chat_room/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/documents/session_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/documents/session_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/documents/user_document.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/helpers/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/api/hello_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/api/chat_room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/documents/message_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/documents/message_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/helpers/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/helpers/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/schemas/session_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/schemas/session_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/schemas/user_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/route/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/route/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +78,10 @@
       <workItem from="1613458032475" duration="331000" />
       <workItem from="1613488708608" duration="129000" />
       <workItem from="1613488843524" duration="2792000" />
-      <workItem from="1613494600960" duration="5668000" />
+      <workItem from="1613494600960" duration="5708000" />
+      <workItem from="1613541417833" duration="1400000" />
+      <workItem from="1614142321833" duration="327000" />
+      <workItem from="1614409980013" duration="3400000" />
     </task>
     <task id="LOCAL-00001" summary="init app">
       <created>1612209397931</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612383199231</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create_document and session">
+      <created>1613500846678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613500846679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +134,7 @@
     <MESSAGE value="init app" />
     <MESSAGE value="delete venv" />
     <MESSAGE value="init new architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="init new architecture" />
+    <MESSAGE value="create_document and session" />
+    <option name="LAST_COMMIT_MESSAGE" value="create_document and session" />
   </component>
 </project>

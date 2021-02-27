@@ -30,7 +30,8 @@ class Response:
         self.set_status()
 
     def get_session(self):
-        self.session = get_current_session(formatted=True)
+        if not self.session:
+            self.session = get_current_session(formatted=True)
 
     def set_status(self):
         if str(self.status_code).startswith('2'):
