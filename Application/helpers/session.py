@@ -7,7 +7,7 @@ from ..documents.session_document import SessionDocument
 from ..documents.chat_room_document import ChatRoomDocument
 
 # import schema
-from ..schemas.session_schema import SessionSchema
+from Application.schemas.session_schema import SessionSchema
 
 #  import utils
 import hashlib
@@ -48,7 +48,8 @@ def get_current_session(formatted=True):
         update_current_room_expiration(session)
         
         if formatted:
-            return SessionSchema(many=False).dump(session.reload).data
+            return SessionSchema(many=False).dump(session.reload()).data
+
         return session
 
     return None

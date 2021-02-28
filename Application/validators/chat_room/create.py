@@ -1,7 +1,5 @@
 from flask import request
 
-# import documents
-from Application.documents.chat_room_document import ChatRoomDocument
 
 # import tools
 from functools import wraps
