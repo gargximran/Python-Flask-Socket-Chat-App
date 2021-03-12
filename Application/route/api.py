@@ -1,7 +1,7 @@
 from . import register, get_routes
 
 # import api controller files
-from ..api.chat_room import create_chat_room
+from ..api.chat_room import create_chat_room, request_to_chat_room
 
 
 to = 'api'
@@ -12,6 +12,8 @@ def register_api_endpoints():
     :return:
     """
     register(endpoint='/create_room', view_func=create_chat_room, to=to, prefix='api', methods=['POST'])
+    register(endpoint='/request/<room_id>', view_func=request_to_chat_room, to=to, prefix='api', methods=['POST'])
+
 
 
 def fire_routes(blueprint):

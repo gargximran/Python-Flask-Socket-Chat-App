@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="create chat room and session">
+    <list default="true" id="3d1b4b8e-43f1-4945-9769-7123d7241d6b" name="Default Changelist" comment="session problem solved">
+      <change afterPath="$PROJECT_DIR$/Application/validators/chat_room/member_request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/helpers/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/helpers/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/validators/chat_room/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/validators/chat_room/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/api/chat_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/api/chat_room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/route/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/route/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/var/www/ifd-python-engine" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,7 +77,10 @@
       <workItem from="1613541417833" duration="1400000" />
       <workItem from="1614142321833" duration="327000" />
       <workItem from="1614409980013" duration="3471000" />
-      <workItem from="1614512728904" duration="3435000" />
+      <workItem from="1614512728904" duration="3463000" />
+      <workItem from="1614924183338" duration="25000" />
+      <workItem from="1615393566308" duration="443000" />
+      <workItem from="1615525766886" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="init app">
       <created>1612209397931</created>
@@ -113,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614416827130</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="session problem solved">
+      <created>1614516366782</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614516366782</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +149,7 @@
     <MESSAGE value="init new architecture" />
     <MESSAGE value="create_document and session" />
     <MESSAGE value="create chat room and session" />
-    <option name="LAST_COMMIT_MESSAGE" value="create chat room and session" />
+    <MESSAGE value="session problem solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="session problem solved" />
   </component>
 </project>
